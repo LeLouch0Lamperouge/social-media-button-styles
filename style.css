@@ -1,0 +1,331 @@
+@import url('https://fonts.googleapis.com/css2?family=Akaya+Telivigala&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  background-color: #2c3a47;
+}
+
+.sms1 {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  padding: 25px 0;
+}
+
+.sm {
+  position: relative;
+  float: left;
+}
+
+.sm a {
+  display: inline-flex;
+  text-decoration: none;
+  font-size: 35px;
+  width: 70px;
+  height: 85px;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin: 0 8px;
+  color: #6ab04c;
+  transition: .4s linear;
+}
+
+.sm a::before, .sm a::after{
+  content: '';
+  position: absolute;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  transition: .4s linear;
+}
+
+.sm a:hover{
+  transform: scale(.8);
+}
+
+.sm a:hover::before{
+  border-left: 4px solid;
+  border-right: 4px solid;
+  transform: skewX(20deg);
+}
+
+.sm a:hover::after{
+  border-top: 4px solid;
+  border-bottom: 4px solid;
+  transform: skewY(-20deg);
+}
+
+.sm2 {
+  position: relative;
+  float: right;
+}
+
+.sm2 a {
+  display: inline-flex;
+  text-decoration: none;
+  font-size: 35px;
+  width: 80px;
+  height: 80px;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin: 8px;
+  background-color: #ccc;
+  color: #6ab04c;
+  transition: .4s linear;
+  border-radius: 24px;
+  box-shadow: 6px 6px 12px rgb(0 0 0 / 15%), -6px -6px 12px rgb(255 255 255 / 10%);
+  overflow: hidden;
+}
+
+.sm2 a:hover{
+  transform: scale(1.3);
+  border-radius: 50%;
+}
+
+.sm2 a i::before{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  background-size: 200% 200%;
+  background-position: 75% 75%;
+  top: 0;
+  left: 0;
+  line-height: 80px;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: background .5s linear;
+}
+
+.sm2 a:hover i::before{
+  background-position: 0% 0%;
+}
+
+.sm2 a i.fa-facebook-f::before{
+  background-image: linear-gradient(135deg,#3b5998 30%,#0a3d62 50%);
+}
+
+.sm2 a i.fa-twitter::before{
+  background-image: linear-gradient(135deg,#1da1f2 30%,#0a3d62 50%);
+}
+
+.sm2 a i.fa-instagram::before{
+  background-image: linear-gradient(135deg,#c32aa3 30%,#0a3d62 50%);
+}
+
+.sm2 a i.fa-youtube::before{
+  background-image: linear-gradient(135deg,#d71e18 30%,#0a3d62 50%);
+}
+
+.sm2 a i.fa-linkedin-in::before{
+  background-image: linear-gradient(135deg,#007bb5 30%,#0a3d62 50%);
+}
+
+.social-buttons {
+  position: relative;
+  float: left;
+}
+
+.social-buttons a {
+  display: inline-flex;
+  text-decoration: none;
+  font-size: 18px;
+  width: 70px;
+  height: 100px;
+  color: #fff;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin: 0 8px;
+}
+
+.social-buttons a::before{
+  content: "";
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  background: linear-gradient(45deg,#22a6b3,#30336b);
+  border-radius: 50%;
+  z-index: -1;
+  transition: 0.3s ease-in;
+}
+
+.social-buttons a:hover::before{
+  transform: scale(0);
+}
+
+.social-buttons a i{
+  transition: 0.3s ease-in;
+}
+
+.social-buttons a:hover i{
+  background: linear-gradient(45deg,#22a6b3,#30336b);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transform: scale(2.2);
+}
+
+.sm3 {
+  position: relative;
+  float: right;
+  margin-top: 15px;
+}
+
+.sm3 a {
+  position: relative;
+  display: inline-flex;
+  color: #666;
+  font-size: 30px;
+  height: 60px;
+  width: 60px;
+  background: #171515;
+  line-height: 60px;
+  border-radius: 50%;
+  margin: 0 15px;
+  cursor: pointer;
+  transition: .5s;
+  justify-content: center;
+  align-items: center;
+}
+
+.sm3 a:before{
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  height: inherit;
+  width: inherit;
+  /* background: #d35400; */
+  border-radius: 50%;
+  transform: scale(.9);
+  z-index: -1;
+  transition: .5s;
+}
+.sm3 a:nth-child(1):before{
+  background: #4267B2;
+}
+.sm3 a:nth-child(2):before{
+  background: #1DA1F2;
+}
+.sm3 a:nth-child(3):before{
+  background: #E1306C;
+}
+.sm3 a:nth-child(4):before{
+  background: #2867B2;
+}
+.sm3 a:nth-child(5):before{
+  background: #ff0000;
+}
+.sm3 a:hover:before{
+  filter: blur(3px);
+  transform: scale(1.2);
+  /* box-shadow: 0 0 15px #d35400; */
+}
+.sm3 a:nth-child(1):hover:before{
+  box-shadow: 0 0 15px #4267B2;
+}
+.sm3 a:nth-child(2):hover:before{
+  box-shadow: 0 0 15px #1DA1F2;
+}
+.sm3 a:nth-child(3):hover:before{
+  box-shadow: 0 0 15px #E1306C;
+}
+.sm3 a:nth-child(4):hover:before{
+  box-shadow: 0 0 15px #2867B2;
+}
+.sm3 a:nth-child(5):hover:before{
+  box-shadow: 0 0 15px #ff0000;
+}
+.sm3 a:nth-child(1):hover{
+  color: #456cba;
+  box-shadow: 0 0 15px #4267B2;
+  text-shadow: 0 0 15px #4267B2;
+}
+.sm3 a:nth-child(2):hover{
+  color: #26a4f2;
+  box-shadow: 0 0 15px #1DA1F2;
+  text-shadow: 0 0 15px #1DA1F2;
+}
+.sm3 a:nth-child(3):hover{
+  color: #e23670;
+  box-shadow: 0 0 15px #E1306C;
+  text-shadow: 0 0 15px #E1306C;
+}
+.sm3 a:nth-child(4):hover{
+  color: #2a6cbb;
+  box-shadow: 0 0 15px #2867B2;
+  text-shadow: 0 0 15px #2867B2;
+}
+.sm3 a:nth-child(5):hover{
+  color: #ff1a1a;
+  box-shadow: 0 0 15px #ff0000;
+  text-shadow: 0 0 15px #ff0000;
+}
+
+.sm4 ul {
+  position: relative;
+  display: flex;
+}
+.sm4 ul li {
+  position: relative;
+  list-style: none;
+  margin: 0 20px;
+  cursor: pointer;
+}
+.sm4 ul li a {
+  text-decoration: none;
+}
+.sm4 ul li a {
+  font-size: 6em;
+  color: #222;
+}
+.sm4 ul li::before {
+  font-family: fontAwesome;
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 6em;
+  height: 0;
+  overflow: hidden;
+  transition: 0.5s ease-in-out;
+}
+.sm4 ul li:nth-child(1)::before {
+  content: '\f099';
+  color: #1da1f2;
+  border-bottom: 4px solid #1da1f2;
+}
+.sm4 ul li:nth-child(2)::before {
+  content: '\f232';
+  color: #25d366;
+  border-bottom: 4px solid #25d366;
+}
+.sm4 ul li:nth-child(3)::before {
+  content: '\f16a';
+  color: #ff0000;
+  border-bottom: 4px solid #ff0000;
+}
+.sm4 ul li:hover::before {
+  height: 100%;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  color: #fff;
+  text-align: center;
+  font-size: 23px;
+  font-family: "Akaya Telivigala", sans-serif;
+}
+
+footer a {
+  color: chartreuse;
+  text-decoration: none;
+  cursor: pointer;
+}
